@@ -9,6 +9,12 @@ docker build . -t headful_chrome
 docker run --rm --name chrome_recording -v $PWD:/output  -it headful_chrome
 ```
 
+The image can take a while to build, so you might prefer to pull from [its Docker Hub repo](https://hub.docker.com/r/atroche/headful_chrome_docker_example):
+
+```bash
+docker pull atroche/headful_chrome_docker_example
+```
+
 Then open up the `screen.webm` file in your working directory.
 
 To test on Cloud Run, push the image up to GCR and create a service / deploy a revision from the image. It should fail
