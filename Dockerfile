@@ -7,4 +7,4 @@ COPY xvfb_and_chrome.sh /
 # for Xvfb
 ENV DISPLAY=:99
 
-CMD ["/bin/bash", "./xvfb_and_chrome.sh"]
+CMD ["/usr/bin/bash", "./xvfb_and_chrome.sh"]
